@@ -1,5 +1,5 @@
 const express = require('express');
-const apiRoutes = require("./controller/controller");
+const apiRoutes = require("./controller/notesController.js");
 const htmlRoutes = require("./controller/htmlController")
 const app = express();
 const PORT = process.env.PORT || 8080;

@@ -6,7 +6,7 @@ class Note {
       return orm.view(["notes"])
     }
     addNote(values) {
-      return orm.create(['title', 'body', 'id'], values)
+      return orm.create(['title', 'text', 'id'], values)
     }
     deleteNote(value) {
       return orm.delete('id', value)

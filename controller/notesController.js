@@ -9,9 +9,9 @@ router.get('/notes', (req, res) => {
   });
   
   router.post('/notes', (req, res) => {
-    const { title, body, id } = req.body;
+    const { title, text, id } = req.body;
   
-    Note.addNote([title, body, id])
+    Note.addNote([title, text, id])
     .then(() => res.status(200).json(true))
     .catch(error => res.status(500).json(error))
   })
